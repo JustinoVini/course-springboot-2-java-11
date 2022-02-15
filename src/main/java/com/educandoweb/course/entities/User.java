@@ -34,6 +34,10 @@ public class User implements Serializable{
 		this.password = password;
 	}
 
+	public User(Object object, String string, String string2, String string3, String string4) {
+		// TODO Auto-generated constructor stub
+	}
+
 	public long getId() {
 		return id;
 	}
