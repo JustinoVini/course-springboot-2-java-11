@@ -15,34 +15,29 @@ public class User implements Serializable{
 	private static final long serialVersionUID = 1L;
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id;
+	private Long id;
 	private String name;
 	private String email;
 	private String fone;
 	private String password;
 	
+	
 	public User() {
 		
 	}
 
-	public User(long id, String name, String email, String fone, String password) {
-		super();
-		this.id = id;
+	public User(String name, String email, String fone, String password) {
 		this.name = name;
 		this.email = email;
 		this.fone = fone;
 		this.password = password;
 	}
 
-	public User(Object object, String string, String string2, String string3, String string4) {
-		// TODO Auto-generated constructor stub
-	}
-
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
